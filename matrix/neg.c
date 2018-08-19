@@ -10,6 +10,6 @@ void mat_neg(Mat_t a, Mat_t b)
     int_t j;
 
     for(i = 0; i < b->r; i++)
-        for(j = 0; j < c; j++)
+        for(j = 0; j < a->c; j++)
             neg(a->rows[i] + (j), b->rows[i] + (j));
 }
